@@ -1,0 +1,263 @@
+.x-landing {
+    &__outter-wrapper {
+        max-width: 1156.6px;
+        margin: 0 auto;
+    }
+    
+    &__bread-crumb {
+        font-size: 12px;
+        color: rgba(112, 112, 112, 0.5);
+        margin-bottom: 23px; 
+        strong {
+            color: rgba(112, 112, 112, 1);
+            font-weight: bold;
+        }       
+    }
+
+    &__liberacred {
+        padding: 30px 61px 57px;        
+        @media only screen and (max-width: 767px) {
+            padding: 44px 15px 39px;
+        }
+    }
+
+    &__liberacred-title {
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 33px;
+        margin-bottom: 44px;
+        color: #092D82;
+        text-transform: uppercase;
+        @media only screen and (max-width: 767px) {
+            font-size: 24px;
+        }
+    }
+
+    &__liberacred-intro {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 33px;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+
+    &__liberacred-description {
+        width: 59.79%;
+        font-size: 16px;
+        line-height: 27px;
+        strong {
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 16px;
+            line-height: 22px;
+        }
+    }
+
+    &__liberacred-link {
+        width: 31.23%;
+        margin-right: 57px;
+        height: 66px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #092D82;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color .2s ease-in-out, color .2s ease-in-out;
+        border: 2px solid #092D82;
+        text-transform: uppercase;
+        &:hover {
+            transition: background-color .2s ease-in-out, color .2s ease-in-out;
+            background-color: #fff;
+            color: #092D82;
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__requirements {
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 767px) {            
+            margin-bottom: 46px;    
+            flex-direction: column;        
+        }
+    }
+
+    &__requirements-left {
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__requirements-title {
+        color: #3C3C3C;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 45px;
+        @media only screen and (min-width: 767px) {
+            max-width: 396px;
+        }
+        
+    }
+
+    &__requirements-list {
+        @media only screen and (min-width: 767px) {
+            max-width: 396px;
+        }
+    }
+
+    &__requirements-list-item {
+        list-style: none;
+        display: flex;
+        span {
+            font-size: 16px;
+            line-height: 31px; 
+            display: inline-block;
+            width: 396px;
+        }
+        &:before {
+            margin-top: 8px;
+            content: '';
+            display: inline-block;
+            width: 6px !important;
+            height: 6px !important;
+            margin-right: 18px;
+            background-color: #092D82;
+        }
+        @media only screen and (max-width: 767px) {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__requirements-right {        
+        @media only screen and (max-width: 767px) {
+            img {
+                width: 100%;
+                height: auto;    
+            }
+            width: 100%;
+        }
+    }
+
+    &__benefits {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+
+        }
+    }
+
+    &__benefits-card {
+        background-color: #F5F5F5;
+        height: 130px;
+        width: 47.88%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 48.5px;
+        svg {
+            width: 68px;
+        }        
+        margin-bottom: 33px;        
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            padding-left: 0px;
+            justify-content: center;
+        }
+    }
+
+    &__benefits-card-text {
+        width: 262px;
+        margin-left: 30px;
+        display: inline-block;
+        font-size: 18px;        
+        font-weight: bold;
+        color: #3C3C3C;
+        text-transform: uppercase;
+        @media only screen and (max-width: 767px) {
+            width: 44%;        
+            font-size: 14px;           
+        }
+    }
+
+    &__fraud-info {
+
+    }
+
+    &__fraud-info-wrapper {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        &.is--open {
+            .x-landing {
+                &__fraud-info-paragraph {
+                    height: auto;
+                    overflow: hidden;
+                }
+
+                &__fraud-info-read {
+                    span {
+                        &:last-child {
+                            display: inline;
+                        }
+
+                        &:first-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__fraud-info-title {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 22px;   
+        margin-bottom: 30px;   
+        color: #092D82;
+    }
+
+    &__fraud-info-paragraph {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        height: 66px;
+        overflow: hidden;
+        color: #262626;
+    }
+
+    &__fraud-info-read {
+        appearance: none;
+        background-color: transparent;
+        font-size: 12px;
+        color: #092D82;
+        line-height: 22px;
+        border: none;
+        padding: 0;
+        font-weight: bold;
+        span {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
